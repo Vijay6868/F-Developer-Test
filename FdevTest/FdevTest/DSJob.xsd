@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSJob" targetNamespace="http://tempuri.org/DSJob.xsd" xmlns:mstns="http://tempuri.org/DSJob.xsd" xmlns="http://tempuri.org/DSJob.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSJob" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSJob" msprop:Generator_DataSetName="DSJob">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="jobDetails" msprop:Generator_RowClassName="jobDetailsRow" msprop:Generator_RowEvHandlerName="jobDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="jobDetailsRowDeleted" msprop:Generator_RowDeletingName="jobDetailsRowDeleting" msprop:Generator_RowEvArgName="jobDetailsRowChangeEvent" msprop:Generator_TablePropName="jobDetails" msprop:Generator_RowChangedName="jobDetailsRowChanged" msprop:Generator_UserTableName="jobDetails" msprop:Generator_RowChangingName="jobDetailsRowChanging" msprop:Generator_TableClassName="jobDetailsDataTable" msprop:Generator_TableVarName="tablejobDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jobID" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="jobID" msprop:Generator_ColumnPropNameInTable="jobIDColumn" msprop:Generator_ColumnPropNameInRow="jobID" msprop:Generator_ColumnVarNameInTable="columnjobID" type="xs:int" />
+              <xs:element name="status" msprop:Generator_UserColumnName="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnVarNameInTable="columnstatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="creation" msprop:Generator_UserColumnName="creation" msprop:Generator_ColumnPropNameInTable="creationColumn" msprop:Generator_ColumnPropNameInRow="creation" msprop:Generator_ColumnVarNameInTable="columncreation" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cName" msprop:Generator_UserColumnName="cName" msprop:Generator_ColumnPropNameInTable="cNameColumn" msprop:Generator_ColumnPropNameInRow="cName" msprop:Generator_ColumnVarNameInTable="columncName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cAddress" msprop:Generator_UserColumnName="cAddress" msprop:Generator_ColumnPropNameInTable="cAddressColumn" msprop:Generator_ColumnPropNameInRow="cAddress" msprop:Generator_ColumnVarNameInTable="columncAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cPhoneNumber" msprop:Generator_UserColumnName="cPhoneNumber" msprop:Generator_ColumnPropNameInTable="cPhoneNumberColumn" msprop:Generator_ColumnPropNameInRow="cPhoneNumber" msprop:Generator_ColumnVarNameInTable="columncPhoneNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cEmail" msprop:Generator_UserColumnName="cEmail" msprop:Generator_ColumnPropNameInTable="cEmailColumn" msprop:Generator_ColumnPropNameInRow="cEmail" msprop:Generator_ColumnVarNameInTable="columncEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="notes" msprop:Generator_RowClassName="notesRow" msprop:Generator_RowEvHandlerName="notesRowChangeEventHandler" msprop:Generator_RowDeletedName="notesRowDeleted" msprop:Generator_RowDeletingName="notesRowDeleting" msprop:Generator_RowEvArgName="notesRowChangeEvent" msprop:Generator_TablePropName="notes" msprop:Generator_RowChangedName="notesRowChanged" msprop:Generator_UserTableName="notes" msprop:Generator_RowChangingName="notesRowChanging" msprop:Generator_TableClassName="notesDataTable" msprop:Generator_TableVarName="tablenotes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="noteId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="noteId" msprop:Generator_ColumnPropNameInTable="noteIdColumn" msprop:Generator_ColumnPropNameInRow="noteId" msprop:Generator_ColumnVarNameInTable="columnnoteId" type="xs:int" />
+              <xs:element name="jobId" msprop:Generator_UserColumnName="jobId" msprop:Generator_ColumnPropNameInTable="jobIdColumn" msprop:Generator_ColumnPropNameInRow="jobId" msprop:Generator_ColumnVarNameInTable="columnjobId" type="xs:int" minOccurs="0" />
+              <xs:element name="note" msprop:Generator_UserColumnName="note" msprop:Generator_ColumnPropNameInTable="noteColumn" msprop:Generator_ColumnPropNameInRow="note" msprop:Generator_ColumnVarNameInTable="columnnote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:jobDetails" />
+      <xs:field xpath="mstns:jobID" />
+    </xs:unique>
+    <xs:unique name="notes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:notes" />
+      <xs:field xpath="mstns:noteId" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="jobDetails_notes" msdata:parent="jobDetails" msdata:child="notes" msdata:parentkey="jobID" msdata:childkey="jobId" msprop:Generator_UserParentTable="jobDetails" msprop:Generator_UserChildTable="notes" msprop:Generator_RelationVarName="relationjobDetails_notes" msprop:Generator_ChildPropName="GetnotesRows" msprop:Generator_ParentPropName="jobDetailsRow" msprop:Generator_UserRelationName="jobDetails_notes" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
